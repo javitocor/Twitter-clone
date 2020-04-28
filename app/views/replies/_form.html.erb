@@ -1,0 +1,10 @@
+<%= simple_form_for(tweeet, tweeet.replies.build) do |f| %>
+<%= f.error_notification %>
+<div class="field">
+  <div class="control">
+    <%= f.input :content, label: "Reply about it", input_html: { class: "textarea "}, wrapper: false, label_html: {class: "label"}, placeholder: "Compose a reply...", autofocus: true %>
+  </div>
+  <%= f.hidden_field :user_id, :value => current_user.id %>
+</div>
+<%= f.button :submit, class: "button is-info" %>
+<% end %>

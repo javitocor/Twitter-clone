@@ -42,6 +42,21 @@
   				</div>
   			</nav>
         <% end %>
+		<% if user_signed_in? %>
+			<nav class="level">
+				<div class="level-left is-mobile">
+					<%= render 'replies/form' %>
+				</div>
+			</nav>
+		<% end %>
+		<% tweeet.replies.each do | reply | %>
+		<div class="media-content">
+  			<div class="content">
+  				<strong><%= reply.user.username %></strong><br />
+  				<p><%= reply.content %></p>
+  			</div>
+		</div>
+		<% end %>
   		</div>
   	</article>
   </div>
