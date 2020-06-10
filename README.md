@@ -1,6 +1,8 @@
 # Twitter-clone
 A blog built up with ruby on rails following the indications in https://web-crunch.com/posts/lets-build-with-ruby-on-rails-a-twitter-clone
 
+![screenshot](/app/assets/images/screenshot.png)
+
 # What it does
 Clone of the social media giant Twitter
 
